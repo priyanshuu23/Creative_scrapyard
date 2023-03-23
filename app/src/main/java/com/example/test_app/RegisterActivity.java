@@ -90,16 +90,23 @@ public class RegisterActivity extends AppCompatActivity {
 //            to check email correctly written or not
             if (!email.matches(emailPattern)){
                 Toast.makeText(RegisterActivity.this, "enter the correct email address", Toast.LENGTH_SHORT).show();
+                return;
             }
 //            to check password is correct
             else if (password.isEmpty() || password.length()<4) {
 
                 Toast.makeText(RegisterActivity.this, "enter password atleast 4 character long", Toast.LENGTH_SHORT).show();
+                return;
 
             }
-            else if (number.length()<10|number.length()>10){
-                Toast.makeText(RegisterActivity.this, "enter correct mobile number", Toast.LENGTH_SHORT).show();
-            }
+            else if (name.isEmpty() || number.length() != 10) {
+                    Toast.makeText(RegisterActivity.this, "Please enter correct name and phone number", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+            else if (name.length()<3) {
+                Toast.makeText(RegisterActivity.this, "Please enter correct name...", Toast.LENGTH_SHORT).show();
+                return;
+            } else
 //            for the progressbar
             ProgressDialog.setMessage("please wait.....");
             ProgressDialog.setTitle("registration");
@@ -120,7 +127,7 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                     else {
                         ProgressDialog.dismiss();
-                        Toast.makeText(RegisterActivity.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "unable to register..."+task.getException(), Toast.LENGTH_SHORT).show();
                     }
 
                 }

@@ -54,6 +54,14 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
 
+//         Check if user is already logged in
+        if (mAuth.getCurrentUser() != null) {
+            Intent intent = new Intent(LoginActivity.this, FullscreenActivity.class);
+            startActivity(intent);
+            finish();
+        }
+
+
 
 //       Set an onClickListener on the TextView to create an Intent to open the RegisterActivity.
         registerTextView.setOnClickListener(new View.OnClickListener() {
@@ -107,7 +115,7 @@ public class LoginActivity extends AppCompatActivity {
                         }
                         else {
                             ProgressDialog.dismiss();
-                            Toast.makeText(LoginActivity.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "unable to log you in..."+task.getException(), Toast.LENGTH_SHORT).show();
                         }
 
                     }
