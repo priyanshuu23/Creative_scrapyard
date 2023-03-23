@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "53320177088",
+    "project_id": "login-regester-55084",
+    "storage_bucket": "login-regester-55084.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53320177088:android:306900cea496276817a425",
+        "android_client_info": {
+          "package_name": "com.example.test_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53320177088-46sg5qmed2p411d4mtuf3klfj363dq3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ8QG40ujcU7N4SP8ZsKpo3QcliBHFuHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53320177088-46sg5qmed2p411d4mtuf3klfj363dq3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
