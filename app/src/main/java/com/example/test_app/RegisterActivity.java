@@ -25,7 +25,7 @@ import javax.xml.transform.ErrorListener;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText ipemail , ippassword;
+    EditText ipemail , ippassword , reg_name , reg_number;
     Button reg_button;
 //    to validate the email
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.[a-z]+";
@@ -49,6 +49,10 @@ public class RegisterActivity extends AppCompatActivity {
     ippassword = findViewById(R.id.password);
     reg_button = findViewById(R.id.reg_button);
     ProgressDialog = new ProgressDialog(this);
+//    for name and contact no
+    reg_name = findViewById(R.id.reg_name);
+    reg_number = findViewById(R.id.phone_no);
+
 //    initialized variables for the inputs on line 15&16
 
 //    firebase initialization
@@ -80,6 +84,8 @@ public class RegisterActivity extends AppCompatActivity {
             private void performAuth() {
                 String email =ipemail.getText().toString();
                 String password =ippassword.getText().toString();
+                String name =reg_name.getText().toString();
+                String number = reg_number.getText().toString();
 
 //            to check email correctly written or not
             if (!email.matches(emailPattern)){
@@ -89,7 +95,10 @@ public class RegisterActivity extends AppCompatActivity {
             else if (password.isEmpty() || password.length()<4) {
 
                 Toast.makeText(RegisterActivity.this, "enter password atleast 4 character long", Toast.LENGTH_SHORT).show();
-                
+
+            }
+            else if (number.length()<10|number.length()>10){
+                Toast.makeText(RegisterActivity.this, "enter correct mobile number", Toast.LENGTH_SHORT).show();
             }
 //            for the progressbar
             ProgressDialog.setMessage("please wait.....");
