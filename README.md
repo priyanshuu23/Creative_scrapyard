@@ -1,4 +1,10 @@
 # Creative_scrapyard
+
+
+
+![logo](https://user-images.githubusercontent.com/96242630/227416698-58e4c4a5-28a7-414b-97e7-0b69f1d42da2.png)
+
+
 Creative Scrapyard is a mobile app designed for Android that provides a unique platform for buying and selling old or scrap items.
 Unlike traditional marketplaces, Creative Scrapyard is focused on bringing together
 a community of artists and creatives who are passionate about repurposing these materials into beautiful and useful items.
