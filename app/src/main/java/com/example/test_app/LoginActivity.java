@@ -89,12 +89,13 @@ public class LoginActivity extends AppCompatActivity {
 //            to check email correctly written or not
                 if (!email.matches(emailPattern)){
                     Toast.makeText(LoginActivity.this, "enter the correct email address", Toast.LENGTH_SHORT).show();
+                    return;
                 }
 //            to check password is correct
                 else if (password.isEmpty() || password.length()<4) {
 
                     Toast.makeText(LoginActivity.this, "enter password atleast 4 character long", Toast.LENGTH_SHORT).show();
-
+                    return;
                 }
 
 //            for the progressbar
