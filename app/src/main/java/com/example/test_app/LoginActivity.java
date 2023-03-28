@@ -80,6 +80,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
             performLogin();
             }
+
+
 //for perfirming login activity
             private void performLogin() {
 
