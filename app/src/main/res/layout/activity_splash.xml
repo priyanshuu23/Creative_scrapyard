@@ -7,12 +7,13 @@
     tools:context=".SplashActivity">
 
     <ImageView
-        android:layout_width="369dp"
-        android:layout_height="653dp"
+        android:layout_width="175dp"
+        android:layout_height="331dp"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22"></ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

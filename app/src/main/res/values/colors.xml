@@ -12,4 +12,13 @@
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
+    <color name="colorAccent">#FFBB86FC</color>
+
+    //for app pallate
+
+    <color name="colorPrimary">#E3FDFD</color>
+    <color name="colorP2">#CBF1F5</color>
+    <color name="colorP3">#A6E3E9</color>
+    <color name="colorP4">#71C9CE</color>
+
 </resources>
