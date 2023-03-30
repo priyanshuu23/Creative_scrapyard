@@ -25,4 +25,13 @@
         <item name="fullscreenBackgroundColor">#18D0C4</item>
         <item name="fullscreenTextColor">@color/light_blue_A200</item>
     </style>
+
+    <style name="Theme.Test_app.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Test_app.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Test_app.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

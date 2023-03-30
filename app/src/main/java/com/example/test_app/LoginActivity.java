@@ -56,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
 
 //         Check if user is already logged in
         if (mAuth.getCurrentUser() != null) {
-            Intent intent = new Intent(LoginActivity.this, FullscreenActivity.class);
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
         }
@@ -124,7 +124,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
 //                    send user to main page
                     private void sendUserToNextActivity() {
-                        Intent intent = new Intent(LoginActivity.this,FullscreenActivity.class);
+                        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                         intent.setFlags(intent.FLAG_ACTIVITY_CLEAR_TASK|intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
 

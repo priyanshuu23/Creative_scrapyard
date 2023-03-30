@@ -20,5 +20,9 @@
     <color name="colorP2">#CBF1F5</color>
     <color name="colorP3">#A6E3E9</color>
     <color name="colorP4">#71C9CE</color>
+    <color name="gray">#454545</color>
+    <color name="light_gray">#8F8F8F</color>
+    <color name="dark_gray">#1E1E1E</color>
+
 
 </resources>
